@@ -1,15 +1,43 @@
-.row {
-  width: 992px;
-  margin-left: auto;
-  margin-right: auto;
-  margin-top: 100px;
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+@media screen and (min-width: 1024px) {
+  .row {
+    width: 992px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 100px;
+  }
 }
 
 /* BLOCCO LEZIONI */
-#lezioni .row>.left,
-#lezioni .row>.right {
-  width: 50%;
-  float: left;
+@media screen and (max-width: 419px){
+  #lezioni .row>.left,
+  #lezioni .row>.right{
+    width: 100%;
+    margin: 20px auto;
+    padding: 30px;
+  }
+}
+
+@media screen and (min-width: 420px){
+  #lezioni .row>.left,
+  #lezioni .row>.right {
+    width: 80%;
+    margin: 50px auto;
+    padding: 15px;
+  }
+}
+
+@media screen and (min-width: 768px){
+  #lezioni .row>.left,
+  #lezioni .row>.right {
+    width: 50%;
+    float: left;
+  }
 }
 
 #lezioni .row img {
@@ -17,6 +45,8 @@
   display: block;
   margin-right: auto;
   margin-left: auto;
+  width: auto;
+  max-width: 90%;
 }
 
 #lezioni {
@@ -24,11 +54,34 @@
 }
 
 /* BLOCCO STEPS */
-#steps .row>.left,
-#steps .row>.central,
-#steps .row>.right {
-  float: left;
-  width: 33%;
+@media screen and (max-width: 419px){
+  #steps .row>.left,
+  #steps .row>.central,
+  #steps .row>.right {
+    width: 100%;
+    margin: 20px auto;
+    padding: 30px;
+  }
+}
+
+@media screen and (min-width: 420px){
+  #steps .row>.left,
+  #steps .row>.central,
+  #steps .row>.right {
+    width: 80%;
+    margin: 50px auto;
+    padding: 15px;
+  }
+}
+
+@media screen and (min-width: 768px){
+  #steps .row>.left,
+  #steps .row>.central,
+  #steps .row>.right {
+    float: left;
+    width: 33%;
+    padding: 15px;
+  }
 }
 
 #steps {
@@ -40,11 +93,27 @@
   text-align: center;
 }
 
-#why .row>.first,
-#why .row>.second,
-#why .row>.third {
-  width: 100%;
-  margin-top: 80px;
+#why hr{
+  margin: 80px 0 50px;
+}
+
+@media screen and (max-width: 419px){
+  #why .row>.first,
+  #why .row>.second,
+  #why .row>.third {
+    width: 100%;
+    padding: 15px;
+  }
+}
+
+@media screen and (min-width: 420px){
+  #why .row>.first,
+  #why .row>.second,
+  #why .row>.third {
+    width: 80%;
+    margin: auto;
+    padding: 15px;
+  }
 }
 
 #why .row img {
